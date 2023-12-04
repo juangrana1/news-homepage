@@ -12,7 +12,7 @@ function HamburgerMenu(props: {
 
   return (
     <div className="background-navbar-mobile">
-      <nav className={`navbar-mobile ${isClosing && 'is-closing'}`}>
+      <nav className={`navbar-mobile${isClosing ? ' navbar-mobile--is-closing' : ''}`}>
         <img
           src="./assets/images/icon-menu-close.svg"
           alt="Close Menu"
@@ -20,11 +20,11 @@ function HamburgerMenu(props: {
           onClick={closeClick}
         />
         <ul className="navbar-mobile__ul">
-          <li className="navbar-mobile__ul__li">Home</li>
-          <li className="navbar-mobile__ul__li">New</li>
-          <li className="navbar-mobile__ul__li">Popular</li>
-          <li className="navbar-mobile__ul__li">Trending</li>
-          <li className="navbar-mobile__ul__li">Categories</li>
+          <li className="navbar-mobile__ul__li"><a href="#">Home</a></li>
+          <li className="navbar-mobile__ul__li"><a href="#">New</a></li>
+          <li className="navbar-mobile__ul__li"><a href="#">Popular</a></li>
+          <li className="navbar-mobile__ul__li"><a href="#">Trending</a></li>
+          <li className="navbar-mobile__ul__li"><a href="#">Categories</a></li>
         </ul>
       </nav>
     </div>

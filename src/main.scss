@@ -19,9 +19,14 @@ html {
   font-weight: 400;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .background {
   background-color: $color-off-white;
-  margin: 88px 164px;
+  padding: 88px 164px;
 }
 
 .header {
@@ -47,6 +52,14 @@ html {
 
     &__li {
       margin-right: 2.5rem;
+
+      &__a {
+        color: $color-vd-grayish-blue;
+
+        &:hover {
+          color: $color-soft-orange;
+        }
+      }
 
       &:last-of-type {
         margin-right: 0;
@@ -78,7 +91,7 @@ html {
 }
 
 .navbar-mobile {
-  position: absolute;
+  position: fixed;
   width: 70%;
   background-color: $color-off-white;
   right: 0;
@@ -103,10 +116,16 @@ html {
       margin-bottom: 1.5rem;
     }
   }
+
+  &--is-closing {
+    animation: disappear 250ms ease-out;
+  }
 }
 
-.is-closing {
-  animation: disappear 250ms ease-out;
+@media (max-width: 1050px) {
+  .background {
+    padding: 22px 41px;
+  }
 }
 
 @media (max-width: 430px) {
@@ -141,6 +160,10 @@ html {
 
           &__description {
             margin-bottom: 1.5rem;
+          }
+
+          &__button {
+            background-color: $color-soft-red;
           }
         }
 

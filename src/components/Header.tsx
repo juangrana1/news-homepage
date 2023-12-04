@@ -12,11 +12,11 @@ function Header(props: {
         {props.screenWidth > mobileScreenWidth ? (
           <nav className="navbar">
             <ul className="navbar__ul">
-              <li className="navbar__ul__li">Home</li>
-              <li className="navbar__ul__li">New</li>
-              <li className="navbar__ul__li">Popular</li>
-              <li className="navbar__ul__li">Trending</li>
-              <li className="navbar__ul__li">Categories</li>
+              <li className="navbar__ul__li"><a href="#" className="navbar__ul__li__a">Home</a></li>
+              <li className="navbar__ul__li"><a href="#" className="navbar__ul__li__a">New</a></li>
+              <li className="navbar__ul__li"><a href="#" className="navbar__ul__li__a">Popular</a></li>
+              <li className="navbar__ul__li"><a href="#" className="navbar__ul__li__a">Trending</a></li>
+              <li className="navbar__ul__li"><a href="#" className="navbar__ul__li__a">Categories</a></li>
             </ul>
           </nav>
         ) : (

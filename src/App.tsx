@@ -25,7 +25,9 @@ function App() {
 
   return (
     <div className="App">
-      {(screenWidth <= mobileScreenWidth && isMenuOpen) && <HamburgerMenu setIsMenuOpen={setIsMenuOpen} />}
+      {screenWidth <= mobileScreenWidth && isMenuOpen && (
+        <HamburgerMenu setIsMenuOpen={setIsMenuOpen} />
+      )}
       <Background>
         <Header
           screenWidth={screenWidth}
@@ -33,7 +35,10 @@ function App() {
           setIsMenuOpen={setIsMenuOpen}
         />
         <Main>
-          <MainBox screenWidth={screenWidth} mobileScreenWidth={mobileScreenWidth} />
+          <MainBox
+            screenWidth={screenWidth}
+            mobileScreenWidth={mobileScreenWidth}
+          />
           <LateralBox />
           <SmallBox
             imgSrc="./assets/images/image-retro-pcs.jpg"

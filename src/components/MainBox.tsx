@@ -1,9 +1,11 @@
-function MainBox(props: {screenWidth: number, mobileScreenWidth: number}) {
+function MainBox(props: { screenWidth: number; mobileScreenWidth: number }) {
   return (
     <>
       <section className="main__main-box">
         <img
-          src={`./assets/images/image-web-3-${props.screenWidth <= props.mobileScreenWidth ? 'mobile' : 'desktop'}.jpg`}
+          src={`./assets/images/image-web-3-${
+            props.screenWidth <= props.mobileScreenWidth ? "mobile" : "desktop"
+          }.jpg`}
           alt="Banner"
           className="main__main-box__image"
         />
@@ -17,11 +19,11 @@ function MainBox(props: {screenWidth: number, mobileScreenWidth: number}) {
               power of the platforms back into the hands of the people. But is
               it really fulfilling its promise?
             </p>
-            <button className="main__main-box__text__description-box__button">
-              <div className="main__main-box__text__description-box__content">
-                READ MORE
-              </div>
-            </button>
+              <button className="main__main-box__text__description-box__button">
+                <div className="main__main-box__text__description-box__content">
+                  READ MORE
+                </div>
+              </button>
           </div>
         </div>
       </section>
