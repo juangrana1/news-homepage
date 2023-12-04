@@ -84,6 +84,7 @@
     &__title {
       color: $color-soft-orange;
       font-size: 2.75rem;
+      font-weight: 800;
     }
 
     &__divider {
@@ -96,6 +97,7 @@
       &__title {
         color: $color-off-white;
         margin-bottom: 0.5rem;
+        font-weight: 800;
 
         &--hover {
           color: $color-soft-orange;
@@ -141,6 +143,7 @@
 
       &__title {
         font-size: 1.1rem;
+        font-weight: 800;
 
         display: flex;
         align-items: center;
